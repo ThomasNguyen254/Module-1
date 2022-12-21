@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>switch-case</title>
+</head>
+<body>
+<input type="text" name ="Month" id = "month" size = 15 placeholder="Nhập số tháng"></input>
+<input type="button" value="Tính số ngày" onclick="caculate()">
+<script>
+    function caculate(){
+    switch (parseInt(document.getElementById('month').value)) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            document.write("Thang nay co 31 ngay");
+            break;
+        case 4:
+        case 6:
+        case 8:
+        case 9:
+        case 11:
+            document.write("Thang nay co 30 ngay");
+            break;
+        case 2:
+            document.write("Thang nay co 28 hoac 29 ngay");
+            break;
+        default:
+            document.write("Moi nhap lai");
+    }
+    }
+</script>
+</body>
+</html>
