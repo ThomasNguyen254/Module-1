@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai11-02</title>
+</head>
+<body>
+<script>
+  let tienLuong=+prompt("Nhap tien luong cua ban");
+  let tienThue;
+  if (tienLuong<7) {
+    tienThue=tienLuong*0.1;
+    document.write("Tien thue cua ban la: " + tienThue);
+  } else if(tienLuong<15) {
+      tienThue=tienLuong*0.2;
+      document.write("Tien thue cua ban la: " + tienThue);
+  } else if(tienLuong>=15) {
+      tienThue=tienLuong*0.3;
+      document.write("Tien thue cua ban la: " + tienThue);
+  } else {
+      document.write("Moi nhap lai");
+  }
+</script>
+</body>
+</html>

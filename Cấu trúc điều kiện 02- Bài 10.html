@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai10-02</title>
+</head>
+<body>
+<script>
+  let soDien= +prompt("Nhap so dien");
+  let tienDien= +prompt("Nhap so tien dien");
+  let giaDien1=1678, giaDien2 = 1777,giaDien3 = 1888;
+  if (soDien<0) {
+    document.write("Moi nhap lai")
+  } else if(soDien<=50) {
+    tienDien=soDien*giaDien1;
+    document.write("Tien dien la :" + tienDien);
+  } else if(soDien<=100) {
+    tienDien=50*giaDien1+((soDien-50)*giaDien2);
+  }else if(soDien<=200) {
+    tienDien=50*giaDien1+(50*giaDien2) +((soDien-100)*giaDien3);
+  }else {
+    document.write("Moi nhap lai");
+  }
+</script>
+</body>
+</html>
