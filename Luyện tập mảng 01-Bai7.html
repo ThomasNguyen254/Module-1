@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    let n=+prompt("Nhap vao so phan tu cua mang")
+    let arr = [];
+    for(let i=0; i<=n-1 ;i++) {
+        arr[i] = +prompt("Nhap vao phan thu thu " + i)
+    }
+    let V = +prompt("Nhap vao so ban muon")
+    let tg;
+        for (let i = 0; i <= arr.length; i++) {
+            if (V == arr[i]) {
+                tg=arr.splice(i,1)
+                document.write(arr)
+            } else {
+                document.write("Moi nhap lai")
+            }
+        }
+
+</script>
+</body>
+</html>
