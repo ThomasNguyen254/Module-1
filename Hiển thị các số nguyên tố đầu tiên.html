@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+  let number = +prompt("Moi nhap so")
+  let count = 0;
+  if (number == 1) {
+    document.write("Mot ko phai la so nguyen to.Moi ban nhap tu so 2")
+  }
+  for(let i = 2;i < number;i++) {
+      count = 0
+    for (let j = 2;j <= i/2; j++) {
+      if(i % j == 0 ) {
+        count++;
+      }
+    }
+    if (count == 0 ) {
+      document.write(i + " ")
+    }
+  }
+
+</script>
+</body>
+</html>
