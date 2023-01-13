@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<input type = "text" name = "word" id = "word" placeholder="Type here">
+<button id = "translator" onclick="Translator()">Translator </button>
+<div id = "result"></div>
+<script>
+    function Translator() {
+    let English = [
+        'dog',
+        'cat',
+        'house',
+        'car'
+    ]
+    let Vietnamese = [
+        'chó',
+        'mèo',
+        'nhà',
+        'xe'
+    ]
+      let wordE = document.getElementById('word').value;
+      let wordV = English.indexOf(wordE);
+      if(wordV !== -1) {
+      document.getElementById('result').innerText = "Result : " + Vietnamese[wordV]
+    } else {
+          document.getElementById('result').innerText = "Please type other word"
+      }
+    }
+
+</script>
+</body>
+</html>

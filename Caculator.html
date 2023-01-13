@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<form>
+<input type="text" id="select1" size=15 name ="select1">
+<input type="text" id="select2" size=15 name ="select2">
+<button id = "plus" value="Addition(+)"onclick="plus()">Addition(+)</button>
+<button id = "minus" value="Subtraction(-)" onclick="minus()">Subtraction(-)</button>
+<button id = "multy" value="Multiplication(X)" onclick="multy">Multiplication(X)</button>
+<button id = "divide" value="Divison(/)" onclick="divide()">Divison(/)</button>
+</form>
+<p id ="result"></p>
+<script>
+    function plus(){
+        let a = parseInt(document.getElementById("select1").value)
+        let b = parseInt(document.getElementById("select2").value)
+        let result = a + b
+        document.getElementById("result").innertext = "Result" + result;
+        }
+    function minus(){
+        let a = parseInt(document.getElementById("select1").value)
+        let b = parseInt(document.getElementById("select2").value)
+        let result = a - b
+        document.getElementById("result").innertext = "Result" + result;
+    }
+    function divide(){
+        let a = parseInt(document.getElementById("select1").value)
+        let b = parseInt(document.getElementById("select2").value)
+        let result = a * b
+        document.getElementById("result").innertext = "Result" + result;
+    }
+    function divison(){
+        let a = parseInt(document.getElementById("select1").value)
+        let b = parseInt(document.getElementById("select2").value)
+        let result = a / b
+        document.getElementById("result").innertext = "Result" + result;
+    }
+</script>
+</body>
+</html>

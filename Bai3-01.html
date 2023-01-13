@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3-01</title>
+</head>
+<body>
+<script>
+  let n1 = 0;
+  let n2 = 1;
+  let x = 1;
+  let nextTerm = n1+n2+x;
+  console.log(n1+ " " + n2 + " " + x + "");
+  for (let i=1;i<20;i++) {
+    n1=n2;
+    n2=x;
+    x=n1+n2;
+    nextTerm+=x;
+    document.writeln(nextTerm)
+  }
+</script>
+</body>
+</html>
