@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+  // function Temperature(C) {
+  //   this.C = C;
+  //   this.getF = function () {
+  //    return (this.C * 1.8) + 32
+  //   }
+  //   this.getK = function () {
+  //      return this.C +273.15
+  //   }
+  // }
+  // let temperature = new Temperature(25);
+  // console.log("Temperature in Fahrenheit : " + temperature.getF());
+  // console.log("Temperature in Kelvin : " + temperature.getK())
+
+  class Temperature {
+      constructor(C) {
+          this.C = C;
+      }
+      getF(){
+          return(this.C * 1.8);
+      }
+      getK(){
+          return this.C + 273.15;
+      }
+  }
+  let temperature = new Temperature(25)
+  console.log(temperature.getK())
+  console.log(temperature.getF())
+</script>
+</body>
+</html>
