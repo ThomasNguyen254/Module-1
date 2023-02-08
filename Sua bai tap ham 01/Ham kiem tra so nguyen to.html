@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ham kiem tra so nguyen to.html</title>
+</head>
+<body>
+<script>
+  let n = +prompt("Nhap vao so bat ky");
+  function kiemTraSoNT() {
+    let check = true;
+    if (n < 2){
+      check = false;
+    }
+    else if (n == 2){
+      check = true;
+    }
+    else if (n % 2 == 0){
+      check = false;
+    }
+    else{
+      for (let i = 3; i < n-1; i+=2)
+      {
+        if (n % i == 0){
+          check = false;
+          break;
+        }
+      }
+    }
+    if (check == true) {
+      document.write(n + " la so nguyen to ")
+    } else {
+      document.write(n + " khong phai la so nguyen to ")
+    }
+  }
+  kiemTraSoNT()
+</script>
+</body>
+</html>
