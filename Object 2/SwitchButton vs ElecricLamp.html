@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SwitchButton vs ElectricLamp</title>
+</head>
+<body>
+<script>
+    class ElectricLamp {
+        constructor(type,price) {
+            this.type = type;
+            this.price = price;
+            this.status = false;
+        }
+        turnOn() {
+            if(this.status) {
+                console.log("The lights are on")
+            } else {
+                console.log("Lamp is on")
+            }
+        }
+        turnOff() {
+            if(this.status) {
+                console.log("Lamp is off");
+                this.status = false;
+            } else {
+                console.log("The lights are on");
+            }
+        }
+    }
+    const  electricLamp = new ElectricLamp(20000);
+    class SwitchButton {
+        constructor(color) {
+            this.color = color;
+            this.lamp = {};
+            this.conectStatus = false;
+        }
+        conectLamp(){
+            this.lamp = obj
+        }
+    }
+
+
+</script>
+</body>
+</html>

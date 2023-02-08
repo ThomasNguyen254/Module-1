@@ -59,13 +59,13 @@ class Mobile{
         this.type = type;
         this.batteryStatus = batteryStatus;
         this.memoryArea = "";
-        this.messenger = ""
+        this.messenger = "";
     }
     setMessenger(messenger) {
-        return this.messenger
+        return this.messenger;
     }
     getMessenger() {
-        return this.messenger
+        return this.messenger;
     }
     sendMessenger(messenger,mobile) {
         mobile.setMessenger(messenger);
@@ -75,7 +75,7 @@ class Mobile{
 let iphone = new Mobile(1,"iphone11",100,50);
 let android = new Mobile(2,"samsung",100,50);
 iphone.sendMessenger("Messenger from iphone",android);
-console.log(android.memoryArea)
+console.log(android.memoryArea);
 </script>
 </body>
 </html>
